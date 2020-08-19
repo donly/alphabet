@@ -14,6 +14,7 @@
 		F6C120DE24ED39110002455B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C120DD24ED39110002455B /* Assets.xcassets */; };
 		F6C120E124ED39110002455B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C120E024ED39110002455B /* Preview Assets.xcassets */; };
 		F6C120E424ED39110002455B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C120E224ED39110002455B /* LaunchScreen.storyboard */; };
+		F6C120EC24ED3C2C0002455B /* WordPronouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C120EB24ED3C2C0002455B /* WordPronouncer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F6C120E024ED39110002455B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F6C120E324ED39110002455B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6C120E524ED39110002455B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C120EB24ED3C2C0002455B /* WordPronouncer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPronouncer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				F6C120D424ED390C0002455B /* AppDelegate.swift */,
 				F6C120D624ED390C0002455B /* SceneDelegate.swift */,
 				F6C120DB24ED390C0002455B /* ContentView.swift */,
+				F6C120EB24ED3C2C0002455B /* WordPronouncer.swift */,
 				F6C120DD24ED39110002455B /* Assets.xcassets */,
 				F6C120E224ED39110002455B /* LaunchScreen.storyboard */,
 				F6C120E524ED39110002455B /* Info.plist */,
@@ -152,6 +155,7 @@
 				F6C120D524ED390C0002455B /* AppDelegate.swift in Sources */,
 				F6C120DA24ED390C0002455B /* alphabet.xcdatamodeld in Sources */,
 				F6C120DC24ED390C0002455B /* ContentView.swift in Sources */,
+				F6C120EC24ED3C2C0002455B /* WordPronouncer.swift in Sources */,
 				F6C120D724ED390C0002455B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
