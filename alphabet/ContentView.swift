@@ -14,6 +14,8 @@ struct ContentView: View {
   @State private var isPronouce = false
   private let colors: [Color] = [.orange, .red, .yellow, .green, .blue, .purple, .white, .gray]
   private let truefalse = [true, false]
+  let pronouncer = WordPronouncer()
+  
     var body: some View {
       ZStack {
         colors.randomElement()!
@@ -31,8 +33,7 @@ struct ContentView: View {
 //          .background(colors.randomElement()!)
           .onTapGesture {
             if !self.isPronouce {
-              let pronouncer = WordPronouncer()
-              pronouncer.pronounce(self.alphabet.lowercased())
+              self.pronouncer.pronounce(self.alphabet.lowercased())
               self.isPronouce = true
             }
             else {
