@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F65288CB25045DC300F10D12 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65288CA25045DC300F10D12 /* HomeView.swift */; };
+		F65288D02504707600F10D12 /* GridStack in Frameworks */ = {isa = PBXBuildFile; productRef = F65288CF2504707600F10D12 /* GridStack */; };
+		F65288D12504899F00F10D12 /* AlphabetTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65288CC2504678300F10D12 /* AlphabetTableView.swift */; };
+		F65288D825052F2000F10D12 /* SwiftUIVisualEffects in Frameworks */ = {isa = PBXBuildFile; productRef = F65288D725052F2000F10D12 /* SwiftUIVisualEffects */; };
 		F6C120D524ED390C0002455B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C120D424ED390C0002455B /* AppDelegate.swift */; };
 		F6C120D724ED390C0002455B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C120D624ED390C0002455B /* SceneDelegate.swift */; };
 		F6C120DA24ED390C0002455B /* alphabet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6C120D824ED390C0002455B /* alphabet.xcdatamodeld */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F65288CA25045DC300F10D12 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F65288CC2504678300F10D12 /* AlphabetTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetTableView.swift; sourceTree = "<group>"; };
+		F65288D225052E5600F10D12 /* TTProgressHUDConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTProgressHUDConfig.swift; sourceTree = "<group>"; };
+		F65288D325052E5600F10D12 /* TTProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTProgressHUD.swift; sourceTree = "<group>"; };
 		F6C120D124ED390C0002455B /* alphabet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alphabet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C120D424ED390C0002455B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6C120D624ED390C0002455B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65288D02504707600F10D12 /* GridStack in Frameworks */,
+				F65288D825052F2000F10D12 /* SwiftUIVisualEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,10 +74,14 @@
 				F6C120D624ED390C0002455B /* SceneDelegate.swift */,
 				F6C120DB24ED390C0002455B /* ContentView.swift */,
 				F6C120EB24ED3C2C0002455B /* WordPronouncer.swift */,
+				F65288CA25045DC300F10D12 /* HomeView.swift */,
+				F65288CC2504678300F10D12 /* AlphabetTableView.swift */,
 				F6C120DD24ED39110002455B /* Assets.xcassets */,
 				F6C120E224ED39110002455B /* LaunchScreen.storyboard */,
 				F6C120E524ED39110002455B /* Info.plist */,
 				F6C120D824ED390C0002455B /* alphabet.xcdatamodeld */,
+				F65288D325052E5600F10D12 /* TTProgressHUD.swift */,
+				F65288D225052E5600F10D12 /* TTProgressHUDConfig.swift */,
 				F6C120DF24ED39110002455B /* Preview Content */,
 			);
 			path = alphabet;
@@ -97,6 +111,10 @@
 			dependencies = (
 			);
 			name = alphabet;
+			packageProductDependencies = (
+				F65288CF2504707600F10D12 /* GridStack */,
+				F65288D725052F2000F10D12 /* SwiftUIVisualEffects */,
+			);
 			productName = alphabet;
 			productReference = F6C120D124ED390C0002455B /* alphabet.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +143,10 @@
 				Base,
 			);
 			mainGroup = F6C120C824ED390C0002455B;
+			packageReferences = (
+				F65288CE2504707600F10D12 /* XCRemoteSwiftPackageReference "GridStack" */,
+				F65288D625052F2000F10D12 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */,
+			);
 			productRefGroup = F6C120D224ED390C0002455B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -155,6 +177,8 @@
 				F6C120D524ED390C0002455B /* AppDelegate.swift in Sources */,
 				F6C120DA24ED390C0002455B /* alphabet.xcdatamodeld in Sources */,
 				F6C120DC24ED390C0002455B /* ContentView.swift in Sources */,
+				F65288D12504899F00F10D12 /* AlphabetTableView.swift in Sources */,
+				F65288CB25045DC300F10D12 /* HomeView.swift in Sources */,
 				F6C120EC24ED3C2C0002455B /* WordPronouncer.swift in Sources */,
 				F6C120D724ED390C0002455B /* SceneDelegate.swift in Sources */,
 			);
@@ -224,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,14 +318,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"alphabet/Preview Content\"";
-				DEVELOPMENT_TEAM = R35G83SMEJ;
+				DEVELOPMENT_TEAM = HC7879NQCX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = alphabet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.magicalboy.alphabet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicalboy.learnletters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,14 +338,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"alphabet/Preview Content\"";
-				DEVELOPMENT_TEAM = R35G83SMEJ;
+				DEVELOPMENT_TEAM = HC7879NQCX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = alphabet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.magicalboy.alphabet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicalboy.learnletters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -350,6 +374,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F65288CE2504707600F10D12 /* XCRemoteSwiftPackageReference "GridStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pietropizzi/GridStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+		F65288D625052F2000F10D12 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucasbrown/swiftui-visual-effects";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F65288CF2504707600F10D12 /* GridStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F65288CE2504707600F10D12 /* XCRemoteSwiftPackageReference "GridStack" */;
+			productName = GridStack;
+		};
+		F65288D725052F2000F10D12 /* SwiftUIVisualEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F65288D625052F2000F10D12 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */;
+			productName = SwiftUIVisualEffects;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F6C120D824ED390C0002455B /* alphabet.xcdatamodeld */ = {

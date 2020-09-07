@@ -9,6 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
+  @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+  
+  init(learnModel: LearnModel = .learn) {
+    self.learnModel = learnModel
+  }
+  
+  var learnModel: LearnModel
   @State private var alphabet = "A"
   private let alphabets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
   @State private var isPronouce = false
@@ -40,13 +48,32 @@ struct ContentView: View {
               self.alphabet = self.alphabets.randomElement()!
               self.isPronouce = false
             }
+          }
+        VStack {
+          Spacer()
+          HStack {
+            Spacer()
+            Button(action: {
+              self.presentationMode.wrappedValue.dismiss()
+            }) {
+              Image(systemName: "return")
+                .padding()
+                .foregroundColor(.white)
+                .frame(width: 64)
+                .background(Color.red)
+                .cornerRadius(40)
+            }
+            .padding()
+          }
         }
       }
+      .navigationBarHidden(true)
+      .navigationBarTitle("")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+      ContentView(learnModel: .learn)
     }
 }
