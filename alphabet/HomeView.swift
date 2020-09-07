@@ -26,6 +26,7 @@ struct HomeView: View {
         NavigationLink(destination: ContentView(learnModel: .view), tag: 2, selection: $action) {
           EmptyView()
         }
+        Spacer()
         Text("ABC Learning")
           .fontWeight(.bold)
           .font(.title)
